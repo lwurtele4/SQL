@@ -1,0 +1,23 @@
+--Create a Clothing Store database
+/**CREATE TABLE; Clothing_Store
+Shirts (30, 30, 20)
+Shorts (20, 20, 12)
+Shoes (15,160,10)
+Socks (10, 15, 10)
+Jackets (5, 80, 10)
+**/
+CREATE TABLE Clothing_Store (id INTEGER PRIMARY KEY, name TEXT, sold INTEGER, in_stock INTEGER, cost INTEGER);
+INSERT into Clothing_Store VALUES (1, "shirts", 30,30,20);
+INSERT into Clothing_Store VALUES (2,"shorts", 20,20,12);
+INSERT into Clothing_Store VALUES (3, "shoes", 15,160,10);
+INSERT into Clothing_Store VALUES (4,"socks", 10,15,10);
+INSERT into Clothing_Store values (5, "Jackets", 5,80,10);
+
+--display the database ordered by cost
+SELECT * FROM Clothing_Store WHERE cost ORDER BY cost;
+
+--display the number of items sold
+SELECT SUM(sold) FROM Clothing_Store;
+
+
+
