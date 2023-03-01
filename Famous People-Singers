@@ -1,0 +1,135 @@
+CREATE TABLE singers (ID INTEGER PRIMARY KEY , artist TEXT, songs_written INTEGER, age INTEGER);
+
+INSERT INTO singers VALUES (1,"Jason Aldean", 48, 45);
+INSERT INTO singers VALUES (2, "Keith Urban", 55, 55);
+INSERT INTO singers VALUES (3, "Beyonce", 42, 55);
+INSERT INTO singers VALUES (4, "Madonna", 70, 64);
+INSERT INTO singers VALUES (5, "Luke Bryan", 28, 46);
+INSERT INTO singers VALUES (6, "Eminem", 12, 51);
+INSERT INTO singers VALUES (7, "Adele", 46, 39);
+INSERT INTO singers VALUES (8, "Shania Twain", 40, 55);
+INSERT INTO singers VALUES (9, "Rihanna", 28, 34);
+INSERT INTO singers VALUES (10, "Cardi B", 16, 28);
+INSERT INTO singers VALUES (11, "Maroon five", 46, 12);
+INSERT INTO singers VALUES (12, "Taylor Swift", 99, 56);
+INSERT INTO singers VALUES (13, "Katie Perry", 76, 12);
+INSERT INTO singers VALUES (14, "Imagine Dragons",75, 34);
+INSERT INTO singers VALUES (15, "Linkin Park", 45, 45);
+INSERT INTO singers VALUES (16, "Elvis", 90, 90);
+INSERT INTO singers VALUES (17, "Ed Sheeran", 56, 56);
+INSERT INTO singers VALUES (18, "UBK",76, 78);
+INSERT INTO singers VALUES (19, "Sam Smith", 78, 67);
+INSERT INTO singers VALUES (20, "Blondie", 79, 34);
+INSERT INTO singers VALUES (21, "Lorde", 45, 45);
+INSERT INTO singers VALUES (22, "Sublime", 56, 13);
+INSERT INTO singers VALUES (23, "Sia", 67, 27);
+INSERT INTO singers VALUES (24, "REM", 45, 77);
+INSERT INTO singers VALUES (25, "The Verve", 23, 56);
+INSERT INTO singers VALUES (26, "Elton John", 45, 44);
+INSERT INTO singers VALUES (27, "Dolly Parton", 89, 98);
+INSERT INTO singers VALUES (28, "Beatles", 12, 43);
+INSERT INTO singers VALUES (29, "Toto", 11, 65);
+INSERT INTO singers VALUES (30, "Prince", 23, 78);
+INSERT INTO singers VALUES (31, "Heart", 34, 11);
+INSERT INTO singers VALUES (32, "Jordan Sparks", 32, 33);
+INSERT INTO singers VALUES (33, "Cher", 10, 9);
+INSERT INTO singers VALUES (34, "Tom Petty", 9, 78);
+INSERT INTO singers VALUES (35, "Breaking Ben", 7, 79);
+INSERT INTO singers VALUES (36, "Ariana Grande", 6, 80);
+INSERT INTO singers VALUES (37, "Usher", 6, 81);
+INSERT INTO singers VALUES (38, "Fallout Boy", 5, 82);
+INSERT INTO singers VALUES (39, "Bruno Mars", 45, 83);
+INSERT INTO singers VALUES (40, "Kanye West", 5, 83);
+INSERT INTO singers VALUES (41, "David Bowie", 5, 84);
+INSERT INTO singers VALUES (42, "One Direction", 71, 85);
+INSERT INTO singers VALUES (43, "Green Day", 45, 86);
+INSERT INTO singers VALUES (44, "Daughtry", 76, 87);
+INSERT INTO singers VALUES (45, "Patti Smith", 89, 88);
+INSERT INTO singers VALUES (46, "Fleetwood Mac", 77, 89);
+INSERT INTO singers VALUES (47, "RadioHead", 78, 90);
+INSERT INTO singers VALUES (48, "Janet Jackson", 76, 91);
+INSERT INTO singers VALUES (49, "John Lennon", 90, 93);
+INSERT INTO singers VALUES (50, "Van Halen", 98, 94);
+ 
+CREATE TABLE spouse (ID INTEGER PRIMARY KEY, artist_ID INTEGER, family_name TEXT);
+
+INSERT INTO spouse VALUES (1, 3, "Urban");
+INSERT INTO spouse VALUES (2, 2, "Twain");
+INSERT INTO spouse VALUES (3, 1, "black");
+INSERT INTO spouse VALUES (5, 4, "white");
+INSERT INTO spouse VALUES (6, 7, "Aldean");
+INSERT INTO spouse VALUES (7, 9, "blue");
+INSERT INTO spouse VALUES (8, 10, "B");
+INSERT INTO spouse VALUES (9, 44, "Anna");
+INSERT INTO spouse VALUES (10, 56, "AD");
+INSERT INTO spouse VALUES (11, 39, "nem");
+
+CREATE TABLE songs (ID INTEGER PRIMARY KEY, artist_ID INTEGER, hits TEXT, title TEXT);
+
+INSERT INTO songs VALUES (1, 52, "Y", "runaway");
+INSERT INTO songs VALUES (2, 53, "N", "alive");
+INSERT INTO songs VALUES (3, 54, "Y", "adore");
+INSERT INTO songs VALUES (4, 55, "Y", "anaconda");
+INSERT INTO songs VALUES (5, 56, "N", "angel");
+INSERT INTO songs VALUES (6, 57, "Y", "apologize");
+INSERT INTO songs VALUES (7, 58, "N", "afterglow");
+INSERT INTO songs VALUES (8, 59, "N", "bad");
+INSERT INTO songs VALUES (9, 60, "Y", "battlefield");
+INSERT INTO songs VALUES (10, 61, "Y", "believer");
+INSERT INTO songs VALUES (11, 62, "Y", "better");
+INSERT INTO songs VALUES (12, 63, "Y", "blue");
+INSERT INTO songs VALUES (13, 64, "Y", "boyfriend");
+INSERT INTO songs VALUES (14, 65, "Y", "burn");
+INSERT INTO songs VALUES (15, 66, "Y", "crawling");
+INSERT INTO songs VALUES (16, 67, "Y", "crazy");
+INSERT INTO songs VALUES (17, 68, "Y", "crush");
+INSERT INTO songs VALUES (18, 69, "Y", "creep");
+INSERT INTO songs VALUES (19, 70, "Y", "crush");
+INSERT INTO songs VALUES (20, 71, "Y", "daughter");
+INSERT INTO songs VALUES (21, 72, "Y", "days");
+INSERT INTO songs VALUES (22, 73, "Y", "desire");
+INSERT INTO songs VALUES (23, 74, "Y", "dissappear");
+INSERT INTO songs VALUES (24, 76, "Y", "diamonds");
+INSERT INTO songs VALUES (25, 76, "Y", "domino");
+INSERT INTO songs VALUES (26, 77, "N", "down");
+INSERT INTO songs VALUES (27, 78, "Y", "dreams"); 
+INSERT INTO songs VALUES (28, 79, "N", "fantasy");
+INSERT INTO songs VALUES (29, 12, "Y", "fame");
+INSERT INTO songs VALUES (30, 13, "Y", "firefly");
+INSERT INTO songs VALUES (31, 14, "Y", "firework");
+INSERT INTO songs VALUES (32, 15, "Y", "footloose");
+INSERT INTO songs VALUES (33, 16, "Y", "ghost");
+INSERT INTO songs VALUES (34, 17, "Y", "ghostbuster");
+INSERT INTO songs VALUES (35, 18, "Y", "gloria");
+INSERT INTO songs VALUES (36, 19, "Y", "gold");
+INSERT INTO songs VALUES (37, 20, "Y", "good");
+INSERT INTO songs VALUES (38, 21, "Y", "hero");
+INSERT INTO songs VALUES (39, 22, "Y", "hello");
+INSERT INTO songs VALUES (40, 23, "Y", "imagine");
+INSERT INTO songs VALUES (41, 24, "N", "ironic");
+INSERT INTO songs VALUES (42, 25, "N", "jump");
+INSERT INTO songs VALUES (43, 26, "N", "kiss");
+INSERT INTO songs VALUES (44, 27, "N", "lonely");
+INSERT INTO songs VALUES (45, 28, "Y", "loser");
+INSERT INTO songs VALUES (46, 29, "N", "lovely");
+INSERT INTO songs VALUES (47, 30, "Y", "magic");
+INSERT INTO songs VALUES (48, 31, "N", "money");
+INSERT INTO songs VALUES (49, 32, "Y", "paradise");
+INSERT INTO songs VALUES (50, 33, "N", "pray");
+INSERT INTO songs VALUES (51, 34, "Y", "paparazzi");
+INSERT INTO songs VALUES (52, 35, "Y", "photograph");
+
+---display artists and their artist ID using a JOIN.
+SELECT a.artist, b. artist_ID
+FROM singers a
+JOIN songs b
+ON a.id=b.artist_ID;
+
+
+---display song titles along with the artist using a JOIN.
+SELECT a.artist, b.title
+FROM singers a 
+JOIN songs b
+ON a.id=b.artist_ID
+
+
